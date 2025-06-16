@@ -12,12 +12,12 @@ html {
 body {
   font-family: 'Abel';
   font-size: 16px;
-  background-color: #fdeeeb;
+  background-color:	#f0f0f5;
   line-height: 1.4em;
 }
 
 h1, h2, h3 {
-  color: #801a00;
+  color: #2d2d34;
 }
 
 li {
@@ -56,7 +56,7 @@ a:hover {
 /* NAVIGATOR */
 /* Navigator: not sure what is this for; but if deleted, doesn't work properly */
 .w3-sidenav{
-  background-color: #fdeeeb;
+  background-color: #f0f0f5;
   margin-top: -75px;
   margin-bottom: 5px;
   margin-left: 750px;
@@ -70,11 +70,11 @@ a:hover {
     text-decoration: none;
 	font-size: 20px;
 	font-weight: bold;
-	color: #801a00;
+	color: #2d2d34;
 }
 
 .w3-sidenav a:hover{
-	background-color:#991f00;
+	background-color: #c8ccd8;
 	color:#ffffff
 }
 
@@ -86,13 +86,13 @@ a:hover {
 .w3-white,
 .w3-hover-white:hover{
 	color:#000!important;
-	background-color:#fdeeeb
+	background-color:#f0f0f5
 }
 /* End: NAVIGATOR */
 
 .name {
 	font-size: 46px;
-	color: #801a00;
+	color: #2d2d34;
 	font-weight: bold;
 	margin: 0 0 0 0;
 	line-height: 0.1em;
