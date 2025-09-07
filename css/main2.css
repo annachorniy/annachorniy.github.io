@@ -6,334 +6,274 @@ html, body {
 }
 
 html {
-    overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 body {
-  font-family: 'Abel';
-  font-size: 16px;
-  background-color:	#f0f0f5;
+  font-family: 'Abel', sans-serif;
+  font-size: 18px;
+  background-color: #f0f0f5;
   line-height: 1.4em;
 }
 
-h1, h2, h3 {
+/* === Grouped heading styles === */
+h1, h2, h3,
+.main-description h2,
+.main-description h3 {
   color: #2d2d34;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 24px;
 }
 
+.main-description .grid_9 {
+  margin-left: 50px !important;   /* flush to the left */
+  /* or any value, e.g., margin-left: 5px; */
+}
+
+/* === Lists === */
 li {
   list-style: square inside none;
-  margin: 0 0 8px 0;
-  padding-left: 0px;
+  margin: 0 0 8px 0; /* or even 4px for very tight spacing */
+  padding-left: 0;
 }
 
 ul {
   list-style: none;
-  margin: 0 0 10px 0;
+  margin: 0 0 0px -40px;
+  line-height: 1.3em;
 }
 
 
-/* HYPERLINKS */
-/* unvisited link */
-a:link {
-    color: #000000;
-	text-decoration: none;
+/* === HYPERLINKS === */
+a {
+  text-decoration: none;
 }
 
-/* visited link */
+a:link,
 a:visited {
-    color: #453f43;
+  color: #000000;
 }
 
-/* mouse over link */
+a:visited {
+  color: #453f43;
+}
+
 a:hover {
-    color: #0059b3;
-	text-decoration: underline;
+  color: #0059b3;
+  text-decoration: underline;
 }
 /* End: HYPERLINKS */
 
 
-/* 	position:fixed!important;*/
-/* NAVIGATOR */
-/* Navigator: not sure what is this for; but if deleted, doesn't work properly */
-.w3-sidenav{
+/* === NAVIGATOR === */
+.w3-sidenav {
   background-color: #f0f0f5;
-  margin-top: -75px;
-  margin-bottom: 5px;
-  margin-left: 750px;
+  margin-top: 6px;
+  margin-bottom: 0px;
+  margin-left: 100px;
   margin-right: -5px;
 }
 
-/* Navigator: unvisited link */
-.w3-sidenav a{
-	padding:4px 2px 4px 8px;
-	text-align: left;
-    text-decoration: none;
-	font-size: 20px;
-	font-weight: bold;
-	color: #2d2d34;
+.w3-sidenav a {
+  padding: 6px 2px 2px 6px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2d2d34;
 }
 
-.w3-sidenav a:hover{
-	background-color: #c8ccd8;
-	color:#ffffff
+.w3-sidenav a:hover {
+  background-color: #c8ccd8;
+  color: #ffffff;
 }
 
 .w3-sidenav a,
-.w3-dropnav a{
-	display:block
+.w3-dropnav a {
+  display: block;
 }
 
 .w3-white,
-.w3-hover-white:hover{
-	color:#000!important;
-	background-color:#f0f0f5
+.w3-hover-white:hover {
+  color: #000 !important;
+  background-color: #f0f0f5;
 }
 /* End: NAVIGATOR */
 
-.name {
-	font-size: 46px;
-	color: #2d2d34;
-	font-weight: bold;
-	margin: 0 0 0 0;
-	line-height: 0.1em;
 
+.name {
+  font-size: 46px;
+  color: #2d2d34;
+  font-weight: bold;
+  line-height: 0.1em;
 }
 
 .name p {
-    display: block;
-    margin-top: .7em;
-    margin-bottom: .4em;
-    margin-left: 0;
-    margin-right: 0;
+  display: block;
+  margin-top: 0.9em;
+  margin-bottom: 0.3em;
+  margin-left: 0;
+  margin-right: 0;
 }
-
 
 .wrapper {
-   width: 100%;
-   margin: 0px 0px 20px 20px;
-   background-position: 0px 0px;
-   padding: 30px 0px 0px 0px;
-   text-align: left;
+  width: 100%;
+  margin: 0 0 20px 10px;
+  background-position: 0 0;
+  padding: 20px 0 0 0;
+  text-align: left;
 }
 
+/* === COMMENTED OUT: .main-photo block (unused) ===
 .main-photo {
-	background-color: #000000;
-	padding: 0px 0px 0px 0px;
-	height: 0px;}
+  background-color: #000000;
+  padding: 0;
+  height: 0;
+}
+*/
 
-	
 .main-description {
-	padding: 20px 0px 0px 0px;
-	height: 360px;}
-
-
-.main-description  h2 {
-    display: block;
-    margin-top: 1.4em;
-    margin-bottom: .4em;
-    margin-left: 0;
-    margin-right: 0;
+  padding: 20px 20px 0 0;
+  height: 250px;
 }
 
-.main-description  h3 {
-    display: block;
-    margin-top: 1.2em;
-    margin-bottom: .2em;
-    margin-left: 0;
-    margin-right: 0;
+.main-description h2 {
+  display: block;
+  margin-top: 1.4em;
+  margin-bottom: 0.4em;
+}
+
+.main-description h3 {
+  display: block;
+  margin-top: 1.2em;
+  margin-bottom: 0.2em;
 }
 
 .main-pubs {
-	height: 570px;
-    border-top: 3px solid #ffffff;
-	font-size: 16px;
+  height: 570px;
+  border-top: 5px solid #d9d9de;
+  font-size: 16px;
+}
+
+.pub {
+  position: relative;
+  padding: 4px 6px;       /* reduce internal padding */  /* top/bottom, left/right */
+  margin-bottom: 6px;     /* reduce space between items */
+  border-radius: 12px;    /* curviture */
+  transition: background-color 0.3s, box-shadow 0.3s;
+  list-style: none;         /* remove the bullet */
+  text-indent: 0;           /* reset text indent */
+}
+
+.pub .preprint {
+  display: block;
+  margin-left: 0;           /* line up flush left */
+}
+
+
+/* === Non-clinical: soft blue === */
+.pub.econ {
+  background-color: #e9f3fb;
+  border: 3px solid #c0d7e4;
+}
+
+/* === Clinical: soft lavender === */
+.pub.clinical {
+  background-color: #f2edf9;
+  border: 3px solid #d8cde6;
+}
+
+/* === Hover effect for both === */
+.pub:hover {
+  background-color: #f5f5ff;
+  box-shadow: 0 0 10px rgba(75, 0, 130, 0.2); /* subtle indigo glow */
 }
 
 .intro {
-	clear: left;
-	font-size: 100%;
-	line-height: 1.4em;}
+  clear: left;
+  font-size: 100%;
+  line-height: 1.4em;
+}
 
 .introsmall {
-	clear: left;
-	font-size: 90%;
-	line-height: 1.2em;}
+  clear: left;
+  font-size: 90%;
+  line-height: 1.2em;
+}
 
 .media {
-		font-size: 14px;
+  font-size: 14px;
+  line-height: 1.2; 
 }
 
-.media li {
-  list-style-type: none;
-  margin: 0 0 0 0;
-  padding-left: 0px;
-}
-
+.media li,
 .media li a {
   list-style-type: none;
-  margin: 0 0 0 0;
-  padding-left: 0px;
+  margin: 0;
+  padding-left: 0;
 }
-
 
 .media ul {
   list-style-type: none;
-  margin: -10px 0 10px 0;
+  margin: 10px 0 0px 0;
+}
+
+.pub .media,
+.pub .pub-extra,
+.media {
+  margin-top: 10px !important;   /* adjust as needed */
 }
 
 
-
-
-/* OLD */
-.open-tab, #hometab {
-  background-color: #5C8533;
+/* === Filter Buttons === */
+.filter-buttons {
+  margin-top: -10px;
+  margin-bottom: 1em;
+  display: flex;
+  gap: 0.7em;
+  padding-left: 0;
 }
 
-#hometab {
-  border-radius: 5px 0px 0px 5px;
+.filter-btn {
+  background: none;
+  border: 1px solid #999;
+  color: #333;
+  padding: 0.4em 1em;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+  cursor: pointer;
 }
 
-
-#upcoming li {
-  list-style: square none;
-  margin: 0 0 2px 0;
-  padding-left: 10px;
+.filter-btn:hover {
+  background: #5C6BC0;
+  color: #f0f0f5;
 }
 
-#upcoming ul {
-  margin: 15px 0 0 0;
+.filter-btn.active {
+  background: #5C6BC0;
+  color: #f0f0f5;
+  border-color: #5C6BC0;
 }
 
-#cv ul {
-  margin: 0 0 0 10px;
-  padding: 0;
+/* Working paper links line: small, tidy, no bullets */
+.wp-links {
+  margin-top: 4px;
+  font-size: 90%;
+  line-height: 1.3;
 }
+.wp-links a { text-decoration: none; }
+.wp-links a:hover { text-decoration: underline; }
 
-#cv li {
-  list-style: square outside none;
-  margin: 0 0 3px 20px;
-  padding-left: 20px;
+/* If you prefer to keep using .media for links, normalize its nested list spacing */
+.pub .media ul {
+  list-style: none !important;
+  margin: 4px 0 0 0 !important;   /* override negative margins */
+  padding: 0 !important;
 }
-
-
-.pub {
-  padding: 10px 0 2px 10px;
-  background-color: #F8F8F8;
-  margin-bottom: 10px;
-  border-radius: 5px;
-}
-
-.pub span {
-  font: bold 1em Arial;
+.pub .media li {
+  list-style: none !important;
+  display: inline;
   margin-right: 8px;
-}
-
-.preprint {
-  margin-right: 8px;
-}
-
-.to-right {
-  margin-left: 25px;
-}
-
-.to-left {
-  margin-right: 50px;
-}
-
-.div.relative {
-     position: relative;
-     left: 50px;
-}
-
-
-#text-container {
-  width: 817px;
-  text-align: justify;
-}
-
-#jlthat {
-  float: right;
-  margin-right: 25px;
-  margin-top: 15px;
-}
-
-.figcaption {
-    display: block;
-    margin: 0 0 10px 0;
-    width: 860px;
-}
-
-
-
-#toppic {
-  margin: 0 0 10px 0;
-  width: 860px;
-}
-
-
-
-#white {
-   color: #f7f7ea;
-}
-
-
- .row {
-    vertical-align: top;
-    horizontal-align: justify;
-    height:auto !important;
-  }
-
-.row a{
-	text-align: right;
-    text-decoration: underline;
-	font-size: 14px;
-	color: #00134d;
-}
-
- .escondido {
-  display:none;
-  }
-
- .show {
-    display: none;
-  }
-
- .hide:target + .show {
-   display: inline;
-  }
-
- .hide:target {
-   display: none;
-  }
-
- .hide:target ~ .escondido {
-   display:inline;
-  }
-
- @media print { .hide, .show { display: none; } }
-
-/**
- * Personal Photos page
- */
-body#personal {
-  min-width: 0;
   padding: 0;
-  margin: 0;
-  background-color: #000000;
-}
-
-div#album {
-  /* background: black; */
-  margin-top: 0.5em;
-  
-}
-
-.photolink {
-  line-height:0px;
-  height: 0px;
-  font-size: 0;
-}
-
-.photolink > img {
-  margin: 0 0 0 6px;
 }
